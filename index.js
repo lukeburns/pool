@@ -6,11 +6,14 @@ function pool(callback) {
 	var all = [];
 	var stream = through();
 	stream
-	.on('data', function(data) { 
+	.on('data', function (data) { 
 		all.push(data); 
 	})
-	.on('end', function() { 
-		callback(all.join('').toString());
+	.on('error', function (err) {
+		callback(err);
+	})
+	.on('end', function () { 
+		callback(null, all.join('').toString());
 	});
 	return stream;
 }
