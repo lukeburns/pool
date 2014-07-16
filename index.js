@@ -1,8 +1,8 @@
 var through = require('through2');
 
-module.exports = handle;
+module.exports = pool;
 
-function handle(callback) {
+function pool(callback) {
 	var all = [];
 	var stream = through();
 	stream

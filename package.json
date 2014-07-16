@@ -1,11 +1,27 @@
 {
-  "name": "handle",
-  "version": "0.0.0",
-  "description": "",
+  "name": "through2-pool",
+  "version": "0.0.1",
+  "description": "For pooling stream data",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Luke Burns <lukemburns@gmail.com> (http://lukeburns.com/)",
-  "license": "ISC"
+  "author": {
+    "name": "Luke Burns",
+    "email": "lukemburns@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lukeburns/pipeline"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "through2": "^0.5.1"
+  },
+  "keywords": [
+  	"streams",
+  	"handle",
+  	"pool",
+  	"collect"
+  ]
 }
