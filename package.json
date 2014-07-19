@@ -1,6 +1,6 @@
 {
   "name": "through2-pool",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "For pooling stream data",
   "main": "index.js",
   "scripts": {

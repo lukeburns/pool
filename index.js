@@ -11,7 +11,6 @@ function pool (cb) { // proposal: options? { toString: Bool, pass: Bool, ... }
 	}, function (callback) {
 		var res = cb(chunks.join('').toString());
 		if (typeof res !== 'undefined' && !(res instanceof require('stream').Readable || res.readable)) {
-			console.log('hey look here', res);
 			if (typeof res === 'object') {
 				this.push(JSON.stringify(res));
 			} else if (typeof String(res) === 'string') {
