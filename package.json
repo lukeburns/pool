@@ -4,7 +4,7 @@
   "description": "For pooling stream data",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap ./test.js"
   },
   "author": {
     "name": "Luke Burns",
@@ -19,9 +19,13 @@
     "through2": "^0.5.1"
   },
   "keywords": [
-  	"streams",
-  	"handle",
-  	"pool",
-  	"collect"
-  ]
+    "streams",
+    "handle",
+    "pool",
+    "collect"
+  ],
+  "devDependencies": {
+    "tap": "^0.4.11",
+    "through2-str": "0.0.1"
+  }
 }
